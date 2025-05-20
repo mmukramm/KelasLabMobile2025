@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rvStudents;
     private TextView noData;
-    private FloatingActionButton fabAdd;
 
     private StudentAdapter studentAdapter;
 

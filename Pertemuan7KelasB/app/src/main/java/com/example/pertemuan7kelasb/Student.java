@@ -11,6 +11,7 @@ public class Student implements Parcelable {
     private String nim;
 
     protected Student(Parcel in) {
+        id = in.readInt();
         name = in.readString();
         nim = in.readString();
     }
@@ -43,6 +44,7 @@ public class Student implements Parcelable {
 
     @Override
     public void writeToParcel(@NonNull Parcel parcel, int i) {
+        parcel.writeInt(id);
         parcel.writeString(name);
         parcel.writeString(nim);
     }
